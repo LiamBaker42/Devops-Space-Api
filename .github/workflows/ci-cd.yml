@@ -21,7 +21,7 @@ jobs:
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
-        python-node-version: '3.11'
+        python-version: '3.11'
 
     # Step C: Install the dependencies listed in your requirements.txt
     - name: Install Dependencies
