@@ -31,6 +31,8 @@ jobs:
 
     # Step D: Run your automated unit test file via PyTest
     - name: Run Automated Unit Tests
+      env:
+        PYTHONPATH: .  
       run: |
         pytest
 
