@@ -1,0 +1,8 @@
+# 1. Force remove the old container
+docker rm -f iss-tracker-container
+
+# 2. Rebuild the image from your fixed local files
+docker build -t iss-tracker-image .
+
+# 3. Spin up the new container mapped to port 8000
+docker run -d -p 8000:8000 --name iss-tracker-container iss-tracker-image
